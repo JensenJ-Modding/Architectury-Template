@@ -7,6 +7,10 @@ on:
   pull_request:
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
 env:
   JAVA_VERSION: 17
   #Use this url to get the download URL for a project on curseforge: https://cursemaven.com/test/{PROJECT_ID}/{FILE_ID}
