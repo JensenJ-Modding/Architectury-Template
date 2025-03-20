@@ -1,7 +1,7 @@
 package net.architecturymod.fabric;
 
-import net.fabricmc.api.ModInitializer;
 import net.architecturymod.ArchitecturyMod;
+import net.fabricmc.api.ModInitializer;
 
 public class ArchitecturyModFabric implements ModInitializer {
     @Override
