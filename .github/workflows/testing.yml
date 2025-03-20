@@ -95,7 +95,7 @@ jobs:
 
       # Lock to a specific commit, incase of breaking changes
       - name: Test Client
-        uses: 3arthqu4ke/mc-runtime-test@077c3b731692cc531233c711688ea14a6f4a6622
+        uses: 3arthqu4ke/mc-runtime-test@3.0.0
         with:
           mc: ${{ env.MINECRAFT_VERSION }}
           modloader: ${{ matrix.loader }}
@@ -104,3 +104,5 @@ jobs:
           mc-runtime-test: ${{ matrix.loader == 'forge' && 'lexforge' || 'fabric' }}
           java: ${{ env.JAVA_VERSION }}
           fabric-api: ${{ matrix.loader == 'fabric' && env.FABRIC_API_VERSION || 'none' }}
+          xvfb: false
+          headlessmc-command: -lwjgl --jvm -Djava.awt.headless=true
