@@ -39,7 +39,7 @@ jobs:
           cache-read-only: false
 
       - name: Spotless Check
-        run: ./gradlew spotlessCheck
+        run: gradle spotlessCheck
 
   build:
     runs-on: ubuntu-latest
