@@ -15,4 +15,3 @@ Any mention of `architecturymod` should be replaced with the modid. Here is a li
 - architecturymod-neoforge.mixins.json - Change filename and package to match new file structure.
 - fabric.mod.json - Change fields inside file. id must match `archives_name` in `gradle.properties`. Mixins and entrypoints must also reflect the folder structure defined.
 - neoforge.mods.toml - Change fields inside file. Match to `fabric.mod.json` on similar things. Adjust mixins at the bottom to match new names.
-- pack.mcmeta - Change description to mod display name.
