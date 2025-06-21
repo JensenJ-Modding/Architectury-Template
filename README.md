@@ -1,6 +1,9 @@
 # Architectury Template
 
 This template adheres to semantic versioning. 
+You can automatically rename everything using `setup.py` in the root directory of the template. Below are instructions for doing this manually.
+Some details will still need to updated manually, such as links to issues page and source in mod metadata files.
+
 Here is a list of things that should be changed when using this template initially. You can use this as a checklist.
 
 Any mention of `architecturymod` should be replaced with the modid. Here is a list of files which will need changing in some way:
